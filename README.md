@@ -16,6 +16,7 @@ gluster volume info
 
 ## bash line for the Clients (change server name and IPs)
 ```bash
+docker run -ti --rm --privileged --cap-add SYS_ADMIN --cap-add MKNOD --device=/dev/fuse pablogn/ubuntu-gluster /bin/bash %%%%%%%%%%%%%%%% yet to be tested, seen in https://hub.docker.com/r/zerodivide1/docker-gluster-client-base/
 mkdir /mnt/glusterfs
 mount -t glusterfs 172.21.12.11:/glustertest /mnt/glusterfs
 ```
