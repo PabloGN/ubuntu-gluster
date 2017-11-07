@@ -14,7 +14,6 @@ gluster volume info
 ```
 
 ## bash line for the Clients (change server name and IPs)
-# Mount the volume
 ```bash
 mkdir /mnt/glusterfs
 mount -t glusterfs 172.21.12.11:/glustertest /mnt/glusterfs
