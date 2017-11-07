@@ -5,7 +5,7 @@ USER root
 
 RUN apt-get update && apt-get install -yq software-properties-common python-software-properties && \
     add-apt-repository ppa:gluster/glusterfs-3.7 && \
-    apt-get update && apt-get install -yq glusterfs-server && \
+    apt-get update && apt-get install -yq glusterfs-server glusterfs-client && \
     rm -rf /var/lib/apt/lists/*
 
 # setup entrypoint
